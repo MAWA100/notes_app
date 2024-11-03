@@ -15,9 +15,9 @@ class NotesView extends StatelessWidget {
           },shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16)
           ));
-        },
+        },shape: CircleBorder(),
         
-        child:const Icon(Icons.add),shape: CircleBorder(),),
+        child:const Icon(Icons.add),),
       body: const NotesViewBody()
     );
   }
