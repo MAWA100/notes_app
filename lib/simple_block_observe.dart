@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class SimpleBlockObserve implements BlocObserver {
+class SimpleBlocObserve implements BlocObserver {
   @override
   void onChange(BlocBase bloc, Change change) {
     debugPrint('chane =$change');
@@ -9,12 +9,12 @@ class SimpleBlockObserve implements BlocObserver {
 
   @override
   void onClose(BlocBase bloc) {
-    // TODO: implement onClose
+    debugPrint('close =$bloc');
   }
 
   @override
   void onCreate(BlocBase bloc) {
-    // TODO: implement onCreate
+    debugPrint('create =$bloc');
   }
 
   @override
