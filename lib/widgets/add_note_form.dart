@@ -38,6 +38,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
             maxLines: 5,
             onSaved: (value)=>subTitle=value,
           ),
+          SizedBox(height: 30,),
           ListViewColors(),
           SizedBox(height: 50,),
           BlocBuilder<AddNoteCubit, AddNoteState>(
